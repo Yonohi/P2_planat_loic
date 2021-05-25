@@ -1,16 +1,20 @@
 import requests
 from bs4 import BeautifulSoup
+from scrap_cat import scraper_cat
 
+# Url du site à scraper
+url = "http://books.toscrape.com"
 
-url = "http://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
-list_url = [url]
+# Recuperation du code source
 response = requests.get(url)
-i = 2
+soup = BeautifulSoup(response.text, features="html.parser")
 
-while response.ok:
-    url_test = url.replace("index",f"page-{i}")
-    response = requests.get(url_test)
-    if response.ok:
-        list_url.append(url_test)
-    i+=1
-    print(list_url)
+# Recuperation des categories
+list_cat = soup.find("ul", {"class": "nav nav-list"}).findAll("a")[1:]
+
+# On genere les url et debut scraping
+for cat in list_cat:
+    url_cat = "http://books.toscrape.com/"+cat["href"]
+    categorie = cat.text.strip().replace(" ", "_")
+    scraper_cat(url_cat, categorie)
+    print(str(categorie) + " finie")
