@@ -23,6 +23,11 @@ Cloner le dépôt distant:
 git remote add origin https://github.com/Yonohi/P2_planat_loic.git
 git clone https://github.com/Yonohi/P2_planat_loic.git
 ```
+Se déplacer dans le dossier créé:
+```
+cd P2_planat_loic
+```
+
 Créer l'environnement de développement et l'activer:
 ```
 python3 -m venv env
