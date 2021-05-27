@@ -1,13 +1,13 @@
 # P2_planat_loic 
 
 Scraping project to validate P2 from the formation Python Developer.
-The goal is to collect some informations concerning books in sale on the website Books to scrape and to put them in a CSV file. The same thing should be done for the image of each book.
+The goal is to collect some informations concerning books for sale on the website Books to scrape and to put them in a CSV file. The same thing should be done for the image of each book.
 Datas are stored by category.
 ***
 
 ## Installation
 
-In the bash, move to the directory where you want the repository with the command line:
+In the terminal, move to the directory where you want to install the repository with the command line:
 ```
 cd <pathdirectory>
 ```
@@ -38,13 +38,13 @@ Install packages:
 pip install -r requirements.txt
 ```
 ## Launch of the script:
-In the bash:
+In the terminal:
 ```
 python3 scrap_all.py
 ```
 
 ## Conclusion
-You should see a folder named **Info_recolte** which contain the folders of the different categories, itself containing a **CSV file with the same name** and another folder named **Images**.
+You should see a folder named **Info_recolte** which contains the folders of the different categories, themselves containing a **CSV file with the same name** and another folder named **Images**.
 
 
 
