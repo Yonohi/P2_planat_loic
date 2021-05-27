@@ -1,51 +1,50 @@
 # P2_planat_loic 
 
-Projet de scraping pour valider le P2 de la formation Developpeur Python.
-Il s'agit ici de récupérer des informations sur des livres en vente sur le site Books to scrape et de les placer dans un fichier CSV
-ainsi que les images des livres. Les données étant rangées par catégorie.
+Scraping project to validate P2 from the formation Python Developer.
+The goal is to collect some informations concerning books in sale on the website Books to scrape and to put them in a CSV file. The same thing should be done for the image of each book.
+Datas are stored by category.
 ***
 
 ## Installation
 
-Dans le Terminal, se déplacer dans le dossier censé accueillir le dépôt
-grâce à la commande cd suivi du chemin du dossier:
+In the bash, move to the directory where you want the repository with the command line:
 ```
-cd <chemindossier>
+cd <pathdirectory>
 ```
 
-Initialiser git:
+Initialize git:
 ```
 git init
 ```
 
-Cloner le dépôt distant:
+Clone the remote repository:
 ```
 git remote add origin https://github.com/Yonohi/P2_planat_loic.git
 git clone https://github.com/Yonohi/P2_planat_loic.git
 ```
-Se déplacer dans le dossier créé:
+Move to the new folder:
 ```
 cd P2_planat_loic
 ```
 
-Créer l'environnement de développement et l'activer:
+Create the development environment and activate it:
 ```
 python3 -m venv env
 source env/bin/activate
 ```
 
-Installer les packages:
+Install packages:
 ```
 pip install -r requirements.txt
 ```
-## Lancement du script
-Toujour dans le Terminal:
+## Launch of the script:
+In the bash:
 ```
 python3 scrap_all.py
 ```
 
 ## Conclusion
-Vous devriez voir apparaître un dossier **Info_recolte** contenant les dossiers des différentes catégories dans lesquel se trouve un **fichier CSV du même nom** et un dossier **Images**.
+You should see a folder named **Info_recolte** which contain the folders of the different categories, itself containing a **CSV file with the same name** and another folder named **Images**.
 
 
 
