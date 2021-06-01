@@ -2,7 +2,7 @@
 
 Scraping project to validate P2 from the formation Python Developer.
 The goal is to collect some informations concerning books for sale on the website Books to scrape and to put them in a CSV file. The same thing should be done for the image of each book.
-Datas are stored by category.
+Data are stored by category.
 ***
 
 ## Installation
